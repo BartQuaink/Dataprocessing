@@ -23,7 +23,9 @@ def split_string(source, separators):
     The ouput of this function should be a list of strings split at the
     positions of each of the separator characters.
     '''
-    # PROVIDE YOUR IMPLEMENTATION HERE
+
+    a = [x for x in source if x not in separators]
+    return a
 
 if __name__ == '__main__':
     # You can try to run your implementation here, that will not affect the
