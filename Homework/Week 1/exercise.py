@@ -24,23 +24,18 @@ def split_string(source, separators):
     positions of each of the separator characters.
     '''
 
-    a = [x for x in source if x not in separators]
-    return a
+    line = list()
+    word = ''
 
-#    words = []
-#    word = []
-#    line = list(source)
-#
-#    for letters in line:
-#        if separators in line:
-#            word.append('')
-#        else:
-#            word.append(letters)
-#        ''.join(word)
-#        words.append(word)
-#        word = ""
-#
-#    return words
+    for letters in source:
+        if all(sepletter != letters for sepletter in separators):
+            word += letters
+        else:
+            if word:
+                line.append(word)
+                word = ''
+
+    return line
 
 
 if __name__ == '__main__':

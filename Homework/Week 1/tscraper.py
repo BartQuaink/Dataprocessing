@@ -7,13 +7,17 @@ This script scrapes IMDB and outputs a CSV file with highest ranking tv series.
 # IF YOU WANT TO TEST YOUR ATTEMPT, RUN THE test-tvscraper.py SCRIPT.
 import csv
 
-from pattern.web import URL, DOM
+print 'HELLO EVERY0'
+import os, sys; sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 
-TARGET_URL = "http://www.imdb.com/search/title?num_votes=5000,&sort=user_rating,desc&start=1&title_type=tv_series"
+from pattern.web import URL, DOM, plaintext
+from pattern.web import NODE, TEXT, COMMENT, ELEMENT, DOCUMENT
+
+TARGET_URL = URL("http://www.imdb.com/search/title?num_votes=5000,&sort=user_rating,desc&start=1&title_type=tv_series")
 BACKUP_HTML = 'tvseries.html'
 OUTPUT_CSV = 'tvseries.csv'
 
-
+print 'HELLO EVERY1'
 def extract_tvseries(dom):
     '''
     Extract a list of highest ranking TV series from DOM (of IMDB page).
@@ -30,8 +34,39 @@ def extract_tvseries(dom):
     # HIGHEST RANKING TV-SERIES
     # NOTE: FOR THIS EXERCISE YOU ARE ALLOWED (BUT NOT REQUIRED) TO IGNORE
     # UNICODE CHARACTERS AND SIMPLY LEAVE THEM OUT OF THE OUTPUT.
+    print 'HELLO EVERY2'
+    dom = DOM(TARGET_URL.download(cached=True))
+    # Get top 50 results
+    for e in dom.by_tag("td.title"):
+        # get title
+        for a in e.by_tag("a.a")[:1]:
+            print plaintext(a.content)
+            print a.attrs["href"]
+            print
 
-    return []  # replace this line as well as appropriate
+        # get rank
+        for td in e.by_tag("td.number")[:1]:
+            print plaintext(td.content)
+            print td.attrs["href"]
+            print
+
+        # get genre
+        for span in e.by_tag("span.genre")[:1]:
+            print plaintext(span.content)
+            print span.attrs["href"]
+            print
+
+        # get actors/actresses
+        for span in e.by_tag("span.credit")[:1]:
+            print plaintext(span.content)
+            print span.attrs["href"]
+            print
+
+        # get runtime (number)
+        for span in e.by_tag("span.runtime")[:1]:
+            print plaintext(span.content)
+            print span.attrs["href"]
+            print
 
 
 def save_csv(f, tvseries):
