@@ -27,6 +27,22 @@ def split_string(source, separators):
     a = [x for x in source if x not in separators]
     return a
 
+#    words = []
+#    word = []
+#    line = list(source)
+#
+#    for letters in line:
+#        if separators in line:
+#            word.append('')
+#        else:
+#            word.append(letters)
+#        ''.join(word)
+#        words.append(word)
+#        word = ""
+#
+#    return words
+
+
 if __name__ == '__main__':
     # You can try to run your implementation here, that will not affect the
     # automated tests.
