@@ -27,6 +27,13 @@ def split_string(source, separators):
     line = list()
     word = ''
 
+    if separators and not source:
+        return line
+
+    elif source and not separators:
+        line.insert(0,source)
+        return line
+
     for letters in source:
         if all(sepletter != letters for sepletter in separators):
             word += letters
@@ -34,6 +41,9 @@ def split_string(source, separators):
             if word:
                 line.append(word)
                 word = ''
+
+    if word is not '':
+        line.append(word)
 
     return line
 

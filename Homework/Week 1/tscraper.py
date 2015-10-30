@@ -7,7 +7,6 @@ This script scrapes IMDB and outputs a CSV file with highest ranking tv series.
 # IF YOU WANT TO TEST YOUR ATTEMPT, RUN THE test-tvscraper.py SCRIPT.
 import csv
 
-print 'HELLO EVERY0'
 import os, sys; sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 
 from pattern.web import URL, DOM, plaintext
@@ -17,7 +16,8 @@ TARGET_URL = URL("http://www.imdb.com/search/title?num_votes=5000,&sort=user_rat
 BACKUP_HTML = 'tvseries.html'
 OUTPUT_CSV = 'tvseries.csv'
 
-print 'HELLO EVERY1'
+showlist = dict()
+
 def extract_tvseries(dom):
     '''
     Extract a list of highest ranking TV series from DOM (of IMDB page).
@@ -34,40 +34,41 @@ def extract_tvseries(dom):
     # HIGHEST RANKING TV-SERIES
     # NOTE: FOR THIS EXERCISE YOU ARE ALLOWED (BUT NOT REQUIRED) TO IGNORE
     # UNICODE CHARACTERS AND SIMPLY LEAVE THEM OUT OF THE OUTPUT.
-    print 'HELLO EVERY2'
     dom = DOM(TARGET_URL.download(cached=True))
     # Get top 50 results
     for e in dom.by_tag("td.title"):
         # get title
-        for a in e.by_tag("a.a")[:1]:
-            print plaintext(a.content)
-            print a.attrs["href"]
+        for a in e.by_tag("a")[:1]:
+            title = plaintext(a.content)
+            print title
             print
 
-        # get rank
-        for td in e.by_tag("td.number")[:1]:
-            print plaintext(td.content)
-            print td.attrs["href"]
+        # get ranking
+        for td in e.by_tag("span.value")[:1]:
+            ranking = plaintext(td.content)
+            print ranking
             print
 
         # get genre
         for span in e.by_tag("span.genre")[:1]:
-            print plaintext(span.content)
-            print span.attrs["href"]
+            genre = plaintext(span.content)
+            print genre
             print
 
         # get actors/actresses
         for span in e.by_tag("span.credit")[:1]:
-            print plaintext(span.content)
-            print span.attrs["href"]
+            actors = plaintext(span.content)
+            print actors
             print
 
         # get runtime (number)
         for span in e.by_tag("span.runtime")[:1]:
-            print plaintext(span.content)
-            print span.attrs["href"]
+            runtime = plaintext(span.content)
+            print runtime
             print
 
+        # create a dictionary of all the retrieved info
+        showlist[e] = {title, ranking, genre, actors, runtime}
 
 def save_csv(f, tvseries):
     '''
@@ -76,7 +77,9 @@ def save_csv(f, tvseries):
     writer = csv.writer(f)
     writer.writerow(['Title', 'Ranking', 'Genre', 'Actors', 'Runtime'])
 
-    # ADD SOME CODE OF YOURSELF HERE TO WRITE THE TV-SERIES TO DISK
+    # write every title, ranking, genre, actors and runtime in a new row
+    for series in tvseries:
+        writer.writerow([tvseries[series][0], series, tvseries[series][1], tvseries[series][2], tvseries[series][3], tvseries[series][4]])
 
 if __name__ == '__main__':
     # Download the HTML file
