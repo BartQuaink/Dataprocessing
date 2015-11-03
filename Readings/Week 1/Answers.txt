@@ -27,3 +27,11 @@ Again, there is no overlay which shows where exactly you are or what's shown on 
 6.3 Is there a way to see the function of each building?
 
 There is a way to see all the functions of the building, you have to click the building and a function will show up. The map can not be sorted in function, which is kind of a shame but not really the point of the visualization. 
+
+Alberto Cairo thinks a visualization should accomplish about 4 tasks. First of all, the visualization is should present several variables necessary to convey the information. In this example the visualization wants to present the information about the construction dates of houses, and rightfully does a good job at that.
+
+Secondly, the visualization allows comparisons in such a way that it's easy to recognize the differences between the data. This is done using a good colour scheme so contrast between construction dates between houses stands out clearly and easily.
+
+Third, organization. Organization is not really needed in this visualization and thus non-existent. There is really no way to organize the data, you could organize them by construction date, but there is no need for this, an overview of the map where the houses are in their actual location is clearer than when the houses would be sorted by date of construction in a graph.
+
+Finally, correlations between the data. There is a way to tell if construction date and location of the houses are in any way correlated to eachother, but the conclusion to why this is true is one someone has to think about themself. So this correlation is being shown, but it's not easy to make conclusions out of it.
