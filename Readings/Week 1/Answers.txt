@@ -1,0 +1,29 @@
+1. Visualization chosen: http://code.waag.org/buildings/
+
+2. Position: Given the houses are all set on a real life location , the location is determined by the GPS location of the houses, with the property of each house as the border of the houses, but this falls under the category 'Size'. Due to this, location can be difficult for someone who has no clue what the layout of the city looks like, but for someone who is familiar with the layout of the city can easily find a certain house they're looking for. 
+
+Colour: The legend of the visulization is clear, only colours are used to show what year they were build in. The colour scheme chosen is in my opinion a good one, white marks the middle of the timeframe, which then it's easy to see what houses are older and which ones are built more recently. My only complain is that you can't change the colour scheme. A lot of houses are built in the past 25 years, where it would be easier to distinguish these houses if there was a possibility to adjust the legend to these last 25 years.
+
+3. The domain problem characterizations of this visualization is the question of what exactly is the creators message which he/she wants to send us? This person wants us to know in what year a certain house is build. Without too much knowledge needed in the field (architecture etc.) the uses is able to understand the information directly. For this reason this is a really good visualization for complete noobies in this field to understand what exactly is being shown and how to interpret the data. 
+The next underlying stage is to map the problems and the data in an interactive map.
+The github page can be found here: https://github.com/waagsociety/buildings
+
+The data type outputted in this stage has to be the shapes, sizes, location and date of construction for each house. The data is collected via BAG, a government instance of collecting and putting together the data and information of each house. This means each house that's in the BAG is also in the map. 
+Uncertainties are almost completely dissected in this visualization, everything in the map is being explained. The only thing I can see people tripping over is the fact that on first glance people might not understand that black means that there is no data for a house in that location, but due to using BAG this is hardly ever the case. Or it means that there is no data at all, which means that there simply isn't a house on that location.
+
+
+4. The most common element of the visualization is it being a statistical map with shading. In the article this is defined as 'A chart frequently used to portray information as a function of geographical location'. Which is exactly what this visualization is. The data is drawn using different spacings between elements, the location of the houses. The data is not proportional to the grid spacing, and not to the different kinds of data used in making the visualization.
+
+5. I agree with that statement. In my opinion art is a way of displaying a message to other people on a not so typical way of showing. Think about certain feelings, messages or thoughts being shown on a way you wouldn't normally think about displaying that feeling. This makes art something special, being able to display a personal experience, graphically and aesthatically pleasing so the person who views the piece of art has to think about it and where it digs up feelings of that person. Visualization does the same thing, while putting effort on making it easy to have the viewer see the piece of art and where this person directly and easily knows which message the creator wants to convey. Art makes someone think about what the creator wants to say, while visualization, functional art, wants the creator to convey a message so the viewer knows what this message is, and afterwards think for themselves what to do with this information.
+
+6.1. I want to be able to look up the building date of my house. 
+
+The visualization isn't really that helpful in looking up certain houses, of course you can drag the map to the house of you will, but let's say I want to look up the construction date of one of my friends' houses. I only know the address and can't really find it on the map, there is no way to enter an address where the map navigates you to that location. If you do know where the house is, the data portrayed is simple, short and useful. 
+
+6.2. Which cities are newer than others?
+
+Again, there is no overlay which shows where exactly you are or what's shown on the map, you have to know which city is which. Only then you can easily see if most of the houses in the city are new, or old. Maybe this was done on purpose, so the only thing being conveyed is an overview of all the houses and not any extra data. I wouldn't consider city names data junk in this case. But if you look at the map it's easily understandable the only thing he wanted to convey was the houses and their corresponding construction dates.
+
+6.3 Is there a way to see the function of each building?
+
+There is a way to see all the functions of the building, you have to click the building and a function will show up. The map can not be sorted in function, which is kind of a shame but not really the point of the visualization. 
