@@ -1,0 +1,16 @@
+Questions week 2 - Javascript
+
+1. Difference between == and ===
+'==' Is a comparison operator and like the name already says, is a operator to compare and check lists, strings, chars whatever. If the two values that are being compared are equal, this operator will return True, and otherwise False.
+
+the '===' operator is useful to check whether a value refers to either 
+True or False. All other values instead of 0, NaN and and empty undefined string will count as True. This is useful to check for equality while not automatically converting strings or values.
+
+2. Being able to reference a specific instance of local variables in an enclosing function. This makes it possible to hold variables and keep using them later on, allowing for instance returning a function out of a function.
+
+3. Functions which are operating on other functions are called higher-order functions. Ex: you have a function in a function (it's called recursion, not ..-ception!) which calls for the argument and variable in the first function what the second function will use. You won't only use a function on a variable, but sometimes on an other function as well.
+
+4.The selector simply selects which elements a set of styles should be applied to. A query selector is a method to let you enter a CSS selector as a paremeter which then returns the elements as a DOM element. 
+It can be used for finding a specific, single element. It will return the first matching element, if there is one.
+
+An example script can be seen here: http://eloquentjavascript.net/13_dom.html#c_ZSN4aV8YVN

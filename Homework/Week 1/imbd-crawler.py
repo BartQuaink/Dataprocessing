@@ -14,7 +14,7 @@ import errno
 
 # Third party library imports:
 import pattern
-from pattern.web import URL, DOM
+from pattern.web import URL, DOM, abs, plaintext
 
 # --------------------------------------------------------------------------
 # Constants:
@@ -213,15 +213,12 @@ def scrape_top_250(url):
     movie_urls = []
     # YOUR SCRAPING CODE GOES HERE, ALL YOU ARE LOOKING FOR ARE THE ABSOLUTE
     # URLS TO EACH MOVIE'S IMDB PAGE, ADD THOSE TO THE LIST movie_urls.
+    url = URL(url)
+    dom = DOM(url.download())
 
-    for e in url.by_tag("td.titleColumn"):
-        # get title
-        for a in e.by_tag("a.href")[:1]:
-            title = plaintext(a.content)
-            print 'http://www.imdb.com' + title
-            movie_urls.append(title)
-            print
-
+    for e in dom.by_class('titleColumn'):
+        for href in e('a')[:1]:
+            movie_urls.append("http://www.imdb.com" + href.attrs["href"])
 
     # return the list of URLs of each movie's page on IMDB
     return movie_urls
@@ -242,33 +239,56 @@ def scrape_movie_page(dom):
         several), actor(s) (semicolon separated if several), rating, number
         of ratings.
     '''
-    print dom
-    
-    movie_details = []
-    # YOUR SCRAPING CODE GOES HERE:
-    for e in dom.by_tag("td.titleColumn"):
-        # get title
-        for a in e.by_tag("a")[:1]:
-            title = plaintext(a.content)
-            print title
-            movie_details.append(title)
-            print
+    actors = ''
+    overview = dom.by_id('overview-top')
 
-        # get year
-        # get duration
-        # get genre(s)
-        # get director(s)
-        # get writer(s)
-        # get actor(s)
+    # get title
+    title = dom('.header .itemprop')[0].content
+    print title
+
+    # get year, not in rest of exercise, why?
+    # for a in overview.by_tag('a')[:0]:
+    #     year = overview.plaintext(year.content)
+    #     print year
+
+    # get duration and genre
+    for infobar in overview.by_class('infobar'):
+        duration = plaintext(infobar.by_tag('time')[0].content)
+        for href in infobar.by_tag('span.itemprop'):
+            genres = plaintext(href.content)
+    print duration, genres
+
+    txtblock = overview.by_tag('div.txt-block')
+    # get director(s)
+    for director in txtblock[0].by_tag('a'):
+        directors = plaintext(director.content)
+        print directors
+
+    # get writer(s)
+    for creator in txtblock[1].by_tag('a'):
+        for creator in creator.by_tag("span.itemprop"):
+            writers = plaintext(creator.content)
+            print writers
+
+    # get actor(s)
+    for actor in txtblock[2].by_tag('a'):
+        for actor in creator.by_tag("span.itemprop"):
+            actors = plaintext(act.content)
+            print actors
+
+    # get the rating
+    user_rating = overview.by_class('star-box-details')
+    for user in user_rating:
         # get rating
+        rating = plaintext(user.by_tag('strong')[0].content)
         # get number of ratings
-
-
+        n_ratings = plaintext(user.by_tag('a')[0].content)
+        n_ratings = n_ratings.replace(',','')
+    print rating, n_ratings
 
     # Return everything of interest for this movie (all strings as specified
     # in the docstring of this function).
-    return title, duration, genres, directors, writers, actors, rating, \
-        n_ratings
+    return title, duration, genres, directors, writers, actors, rating, n_ratings
 
 
 if __name__ == '__main__':
