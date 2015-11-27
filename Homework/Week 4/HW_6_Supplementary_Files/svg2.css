@@ -6,10 +6,27 @@
 
  /* Europe color */
 
-/* color any country by hovering over it*/
-path:hover{
-    fill: red;
+.eu
+{
+   fill: #a6f5b3;
+   stroke: #ffffff;
+   stroke-width: 0.5;
 }
+
+#de
+{
+  fill: #edf90c
+}
+
+#fr
+{
+  fill: #0b06f2
+}
+
+/* color any country by hovering over it*/
+/*path.landxx:hover{
+    fill: red;
+}*/
 
 /*
  * Circles around small countries
