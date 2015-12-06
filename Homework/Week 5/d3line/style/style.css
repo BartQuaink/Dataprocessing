@@ -1,0 +1,63 @@
+html, body, div, h1, hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: 12px Arial;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+#header {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-family: Trebuchet MS;
+    height: 50px;
+}
+
+#header p {
+    margin: 5px;
+    font-size: 15px;
+}
+
+#footer {
+  text-align: right;
+  font-size: 10px;
+}
+
+.canvas {
+  float: left;
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-left: 20px;
+  cursor: crosshair;
+}
+.info {
+  position: absolute;
+  right: 0;
+
+}
+
+#tooltip {
+    position: absolute;
+    background-color: #00ff00;
+    z-index: 2;
+    visibility: hidden;
+    }

@@ -1,0 +1,35 @@
+<!DOCTYPE html> <meta http-equiv="content-type" content="text/html; charset=UTF8">
+<link rel="icon" href="data:;base64,=">
+<html>
+  <head>
+    <title>Population map</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Population size of countries</h1>
+    </div>
+    <div id="container"></div>
+    <script src="../d3/d3.js"></script>
+    <script src="js/d3maps.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="js/datamaps.world.min.js"></script>
+    <div id="source">Source of data: http://data.worldbank.org/data-catalog/Population-ranking-table</div>
+    <div id="footer">
+      <p>
+      As it was mostly not an issue of selecting a good colour scheme or playing around with interactivity, the biggest problem was actually getting all the data to work properly and the actual displaying of the data.
+      </p>
+      <p>
+      I've been having a lot of trouble loading in all the libraries and getting them to work, donwloading them didn't work, I couln't host my own website, for which I had to download a new application and a lot of general errors containing simple linking of the .js libraries.
+      Because this took a lot of my time, I didn't finish all of my ideas which I had prior to starting this homework exercise.
+      </p>
+      I really wanted to implement an interactive legend, which didn't work yet.
+      <p>
+      The map display is too big in my opinion, but I couldn't find a solution for that as well.
+      The colouring scheme is a simple gradient from dark red to greenish. I'm quite satisfied with that.
+      </p>
+      The tooltip is one of the things I wanted to fix as well, the population contained comma's for easier readability, but while loading in the data this has proven to be really difficult because the file is a comma seperated file, and loading strings was quite the difficult task. That's one of the other things I'd like to have changed before handing in this assignment, but there was a lack of time.
+    </div>
+    <div id="creator">Created by: Bart Quaink, UvA student nr.: 11121424</div>
+  </body>
+</html>
