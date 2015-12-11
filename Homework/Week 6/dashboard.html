@@ -1,0 +1,44 @@
+<!DOCTYPE html> <meta http-equiv="content-type" content="text/html; charset=UTF8">
+<link rel="icon" href="data:;base64,=">
+<html>
+  <head>
+    <title>Population map</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Population data</h1>
+    </div>
+    <div id="information">
+      This dashboard is representing the population growth compared to the year before, from 2000 until 2014. The dropdown menu to the left is supposed to update the map for each year. I didn't manage to make this work.
+
+      Then, selecting a country should call up another script which will update the line graph to show the population growth for a specific country over the years. Selecting the country on the map and updating it in the script all work, but I couldn't get the script to update the line graph, I ran out of time to figure it all out so this exercise is really incomplete, sadly..
+    </div>
+    <div id="containermap"></div>
+      <div class="menu">
+        <select id="dropdown" onchange="changefunction(this.value)">
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2000">2000</option>
+        </select>
+      </div>
+    <div id="containergraph"></div>
+    <div id="clickedcountryname" style="visibility: hidden"></div>
+    <script src="d3/d3.js"></script>
+    <script src="Js/worldmap.js"></script>
+    <script id="totalpopscript" src="Js/totalpop.js"></script>
+    <script src="Js/backup.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="js/datamaps.world.min.js"></script>
+    <div id="source">Source of data: http://data.worldbank.org/data-catalog/Population-ranking-table</div>
+    <div id="creator">Created by: Bart Quaink, UvA student nr.: 11121424</div>
+  </body>
+</html>
