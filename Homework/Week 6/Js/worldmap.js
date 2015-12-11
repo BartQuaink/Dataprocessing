@@ -2,8 +2,8 @@
 // Student nr.: 11121424
 d3.json("Data/populationgrowth.json", function(data) {
 
-    // start map at year 2014
-    strUser = "2014";
+    // start map at year 2010, to test, this works, but updating the strUser to another year doesn't work for some reason
+    strUser = "2010";
     updateddata = {};
 
     // ------------------------------------- CREATE THE WORLD MAP ----------------------------------------- //
