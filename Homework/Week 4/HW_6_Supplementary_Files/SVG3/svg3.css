@@ -70,11 +70,36 @@
  */
 .landxx
 {
-   fill: #e0e0e0;
+   /*fill: #e0e0e0;*/
    stroke:#ffffff;
    stroke-width:0.5;
    fill-rule:evenodd;
 }
+
+.kz, .mn, .eu, .bo, .co, .gy, .gt, .ni, .cr, .sr, .pe, .py, .uy, .sv, .is, .ch
+{
+  fill: #e0e0e0;
+  stroke:#ffffff;
+  stroke-width:0.5;
+  fill-rule:evenodd;
+}
+
+.qa, .am, .sy, .md, .jo, .al, .mk, .me, .il, .lb, .ps, .tl, .bn
+{
+  fill: #e0e0e0;
+  stroke:#ffffff;
+  stroke-width:0.5;
+  fill-rule:evenodd;
+}
+
+.tr, .ua, .by, .ba, .rs, .kp, .la, .np, .bt, .iq, .kz, .kg, .pk, .tj, .tm, .uz, .af
+{
+  fill: #e0e0e0;
+  stroke:#ffffff;
+  stroke-width:0.5;
+  fill-rule:evenodd;
+}
+
 
 /*
  * Styles for coastlines of islands with no borders

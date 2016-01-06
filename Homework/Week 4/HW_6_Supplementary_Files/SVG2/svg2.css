@@ -6,11 +6,14 @@
 
  /* Europe color */
 
-.eu
+ /* Europe color */
+.eu, .eu *, #ch, #by, #ua, #md-, #xp-, #ba, #rs-, #me-, #xk-, #al, #mk, #path4066, #path6794, #path2922
 {
-   fill: #a6f5b3;
-   stroke: #ffffff;
-   stroke-width: 0.5;
+    fill:#b3b3b3;
+    stroke:#ffffff;
+    stroke-width:0.5;
+    fill-rule:evenodd;
+    z-index:1;
 }
 
 #de
