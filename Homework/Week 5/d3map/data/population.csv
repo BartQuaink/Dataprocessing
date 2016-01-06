@@ -1,0 +1,202 @@
+country_code,country,populationCHN,China,1364270IND,India,1295292USA,United States,318857IDN,Indonesia,254455BRA,Brazil,206078PAK,Pakistan,185044NGA,Nigeria,177476BGD,Bangladesh,159078RUS,Russian Federation,143820JPN,Japan,127132MEX,Mexico,125386PHL,Philippines,99139ETH,Ethiopia,96959
+VNM,Vietnam,90730
+EGY,Egypt,89580
+DEU,Germany,80890
+IRN,Iran,78144
+TUR,Turkey,75932
+ZAR,Dem rep. Congo,74877
+THA,Thailand,67726
+FRA,France,66207
+GBR,United Kingdom,64510
+ITA,Italy,61336
+ZAF,South Africa,54002
+MMR,Myanmar,53437
+TZA,Tanzania,51823
+KOR,Korea,50424
+COL,Colombia,47791
+ESP,Spain,46405
+UKR,Ukraine,45363
+KEN,Kenya,44864
+ARG,Argentina,42980
+SDN,Sudan,39350
+DZA,Algeria,38934
+POL,Poland,37996
+UGA,Uganda,37783
+CAN,Canada,35540
+IRQ,Iraq,34812
+MAR,Morocco,33921
+AFG,Afghanistan,31628
+PER,Peru,30973
+SAU,Saudi Arabia,30887
+UZB,Uzbekistan,30743
+VEN,Venezuela,30694
+MYS,Malaysia,29902
+NPL,Nepal,28175
+MOZ,Mozambique,27216
+GHA,Ghana,26787
+YEM,Yemen,26184
+PRK,Dem. Rep. Korea,25027
+AGO,Angola,24228
+MDG,Madagascar,23572
+AUS,Australia,23491
+CMR,Cameroon,22773
+SYR,Syrian Arab Republic,22158
+CIV,C�te d'Ivoire,22157
+LKA,Sri Lanka,20639
+ROM,Romania,19911
+NER,Niger,19114
+CHL,Chile,17763
+BFA,Burkina Faso,17589
+KAZ,Kazakhstan,17289
+MLI,Mali,17086
+NLD,Netherlands,16854
+MWI,Malawi,16695
+GTM,Guatemala,16015
+ECU,Ecuador,15903
+ZMB,Zambia,15721
+KHM,Cambodia,15328
+ZWE,Zimbabwe,15246
+SEN,Senegal,14673
+TCD,Chad,13587
+GIN,Guinea,12276
+SSD,South Sudan,11911
+CUB,Cuba,11379
+RWA,Rwanda,11342
+BEL,Belgium,11225
+TUN,Tunisia,10997
+GRC,Greece,10958
+BDI,Burundi,10817
+BEN,Benin,10598
+HTI,Haiti,10572
+BOL,Bolivia,10562
+SOM,Somalia,10518
+CZE,Czech Republic,10511
+DOM,Dominican Republic,10406
+PRT,Portugal,10397
+HUN,Hungary,9862
+SWE,Sweden,9690
+AZE,Azerbaijan,9538
+BLR,Belarus,9470
+ARE,United Arab Emirates,9086
+AUT,Austria,8534
+TJK,Tajikistan,8296
+ISR,Israel,8215
+CHE,Switzerland,8190
+HND,Honduras,7962
+PNG,Papua New Guinea,7464
+HKG,Hong Kong,7242
+BGR,Bulgaria,7226
+SRB,Serbia,7129
+TGO,Togo,7115
+LAO,Lao PDR,6689
+JOR,Jordan,6607
+PRY,Paraguay,6553
+SLE,Sierra Leone,6316
+LBY,Libya,6259
+SLV,El Salvador,6108
+NIC,Nicaragua,6014
+KGZ,Kyrgyz Republic,5834
+DNK,Denmark,5640
+SGP,Singapore,5470
+FIN,Finland,5464
+SVK,Slovak Republic,5419
+TKM,Turkmenistan,5307
+NOR,Norway,5136
+ERI,Eritrea,5110
+CAF,Central African Republic,4804
+CRI,Costa Rica,4758
+IRL,Ireland,4613
+LBN,Lebanon,4547
+NZL,New Zealand,4510
+COG,Rep. Congo,4505
+GEO,Georgia,4504
+LBR,Liberia,4397
+WBG,West Bank and Gaza,4295
+HRV,Croatia,4236
+OMN,Oman,4236
+MRT,Mauritania,3970
+PAN,Panama,3868
+BIH,Bosnia and Herzegovina,3818
+KWT,Kuwait,3753
+MDA,Moldova,3556
+PRI,Puerto Rico,3548
+URY,Uruguay,3420
+ARM,Armenia,3006
+LTU,Lithuania,2929
+MNG,Mongolia,2910
+ALB,Albania,2894
+JAM,Jamaica,2721
+NAM,Namibia,2403
+BWA,Botswana,2220
+QAT,Qatar,2172
+LSO,Lesotho,2109
+MKD,Macedonia,2076
+SVN,Slovenia,2062
+LVA,Latvia,1990
+GMB,Gambia,1928
+KSV,Kosovo,1823
+GNB,Guinea-Bissau,1801
+GAB,Gabon,1688
+BHR,Bahrain,1362
+TTO,Trinidad and Tobago,1354
+EST,Estonia,1314
+SWZ,Swaziland,1269
+MUS,Mauritius,1261
+TMP,Timor-Leste,1212
+CYP,Cyprus,1154
+FJI,Fiji,886
+DJI,Djibouti,876
+GNQ,Equatorial Guinea,821
+COM,Comoros,770
+BTN,Bhutan,765
+GUY,Guyana,764
+MNE,Montenegro,622
+MAC,Macao SAR China,578
+SLB,Solomon Islands,572
+LUX,Luxembourg,556
+SUR,Suriname,538
+CPV,Cabo Verde,514
+MLT,Malta,427
+BRN,Brunei Darussalam,417
+BHS,The Bahamas,383
+MDV,Maldives,357
+BLZ,Belize,352
+ISL,Iceland,328
+BRB,Barbados,283
+PYF,French Polynesia,280
+NCL,New Caledonia,266
+VUT,Vanuatu,259
+WSM,Samoa,192
+STP,S�o Tom� and Principe,186
+LCA,St. Lucia,184
+GUM,Guam,168
+CHI,Channel Islands,163
+CUW,Cura�ao,156
+KIR,Kiribati,110
+VCT,St. Vincent and the Grenadines,109
+GRD,Grenada,106
+TON,Tonga,106
+VIR,Virgin Islands (U.S.),104
+FSM,Micronesia Fed. Sts.,104
+ABW,Aruba,103
+SYC,Seychelles,92
+ATG,Antigua and Barbuda,91
+IMY,Isle of Man,87
+ADO,Andorra,73
+DMA,Dominica,72
+BMU,Bermuda,65
+CYM,Cayman Islands,59
+GRL,Greenland,56
+ASM,American Samoa,55
+KNA,St. Kitts and Nevis,55
+MNP,Northern Mariana Islands,55
+MHL,Marshall Islands,53
+FRO,Faeroe Islands,48
+SXM,Sint Maarten (Dutch part),38
+MCO,Monaco,38
+LIE,Liechtenstein,37
+TCA,Turks and Caicos Islands,34
+SMR,San Marino,32
+MAF,St. Martin (French part),32
+PLW,Palau,21
+TUV,Tuvalu,10
